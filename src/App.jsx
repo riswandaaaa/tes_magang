@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from '../components/Layout';
-import Dashboard from './pages/Dashboard';
-import StoriesList from './pages/StoriesList';
-import AddStory from './pages/AddStory';
-import AddChapter from './pages/AddChapter';
+
+// Buat komponen sederhana sementara agar tidak error
+const Dashboard = () => <h1>Dashboard</h1>;
+const StoriesList = () => <h1>Stories List</h1>;
+const AddStory = () => <h1>Add Story</h1>;
+const AddChapter = () => <h1>Add Chapter</h1>;
+const Layout = ({ children }) => <div>{children}</div>;
 
 function App() {
   return (
